@@ -1,0 +1,1 @@
+C:\repo\lolengine\lol\UI\build\classes\java\main\module-info.class;C:\repo\lolengine\lol\UI\build\classes\kotlin\main\view\ui\HelloApplication.class;C:\repo\lolengine\lol\UI\build\classes\kotlin\main\view\ui\HelloApplicationKt.class;C:\repo\lolengine\lol\UI\build\classes\kotlin\main\view\ui\HelloController.class
