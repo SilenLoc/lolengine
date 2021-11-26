@@ -44,7 +44,8 @@ data class ChampionStatsJson(
   val crit: Double = 0.0,
   val critperlevel: Double = 0.0,
   val attackdamage: Double = 0.0,
-  val attackdamageperlevel: Double = 0.0,  val attackspeedperlevel: Double = 0.0,
+  val attackdamageperlevel: Double = 0.0,
+  val attackspeedperlevel: Double = 0.0,
   val attackspeed: Double = 0.0,
 )
 

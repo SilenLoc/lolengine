@@ -4,6 +4,9 @@ data class Champion(
     val id: String = "",
     val name: String = "",
     val blurb: String = "",
-    val infos: List<Pair<String,Int>>
+    val infos: List<Pair<String,Int>>,
+    val stats: List<Pair<String,Double>>
 )
+
+
 
