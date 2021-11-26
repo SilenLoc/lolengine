@@ -11,6 +11,7 @@ class ChampionTab(model: Champion) : Tab() {
   init {
     this.isClosable = false
     this.text = model.name
+    this.id = model.id
     this.content = championView
 
     this.selectedProperty().addListener { o ->
