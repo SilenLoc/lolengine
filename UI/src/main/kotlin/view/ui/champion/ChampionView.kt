@@ -22,7 +22,7 @@ class ChampionView(model: Champion) : BorderPane() {
 
     championInnerTabPane.tabs.addAll(loreTab, infoTab, statsTab)
 
-    this.top = championInnerTabPane
+    this.bottom = championInnerTabPane
   }
 
   fun selectInnerTabWithId(id: String) {
