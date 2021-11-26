@@ -1,4 +1,4 @@
-package view.ui
+package view.ui.champion
 
 import javafx.scene.control.Label
 import javafx.scene.control.TabPane

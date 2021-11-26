@@ -1,16 +1,16 @@
-package view.ui
+package view.ui.champion
 
 import javafx.scene.control.Label
 import javafx.scene.layout.VBox
 import javafx.scene.text.Text
 import javafx.scene.text.TextAlignment
 
-class FullLoreView(lore: String) : AbstractLoreView(lore, "Full Lore:"), IIdentifiable{
+class FullLoreView(lore: String) : AbstractLoreView(lore, "Full Lore:"), IIdentifiable {
   override val idAsString: String = "fulllore"
 
 }
 
-class BlurbView(blurb: String) : AbstractLoreView(blurb, "Blurb:") , IIdentifiable{
+class BlurbView(blurb: String) : AbstractLoreView(blurb, "Blurb:"), IIdentifiable {
   override val idAsString: String = "blurb"
 }
 

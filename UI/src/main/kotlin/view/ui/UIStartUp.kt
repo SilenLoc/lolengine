@@ -1,9 +1,9 @@
 package view.ui
 
-import javafx.beans.value.ChangeListener
 import javafx.scene.control.TabPane
 import javafx.scene.layout.BorderPane
 import model.service.ChampionService
+import view.ui.champion.ChampionTab
 
 private val mainPane = BorderPane()
 

@@ -1,4 +1,4 @@
-package view.ui
+package view.ui.champion
 
 import javafx.scene.control.Tab
 import model.champion.Champion
@@ -19,7 +19,7 @@ class ChampionTab(model: Champion) : Tab() {
   }
 }
 
-class InfoTab: Tab("Info"), IIdentifiable{
+class InfoTab: Tab("Info"), IIdentifiable {
   override val idAsString: String = "infotab"
   init {
     this.isClosable = false
@@ -29,7 +29,7 @@ class InfoTab: Tab("Info"), IIdentifiable{
   }
 }
 
-class StatsTab: Tab("Stats"), IIdentifiable{
+class StatsTab: Tab("Stats"), IIdentifiable {
   override val idAsString: String = "statstab"
   init {
     this.isClosable = false
@@ -39,7 +39,7 @@ class StatsTab: Tab("Stats"), IIdentifiable{
   }
 }
 
-class LoreTab: Tab("Lore"), IIdentifiable{
+class LoreTab: Tab("Lore"), IIdentifiable {
   override val idAsString: String = "loreTab"
   init {
     this.isClosable = false
