@@ -60,8 +60,6 @@ class ChampionInfoView(infos: List<Pair<String, Int>>) : VBox() {
   }
 }
 
-interface IIdentifiable {
-  val idAsString: String
-}
+
 
 

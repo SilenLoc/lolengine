@@ -3,7 +3,6 @@ package view.ui
 import javafx.scene.control.Tab
 import model.champion.Champion
 
-
 var selectedTabId: String = "loreTab"
 
 class ChampionTab(model: Champion) : Tab() {
@@ -48,6 +47,8 @@ class LoreTab: Tab("Lore"), IIdentifiable{
 
     this.selectedProperty().addListener { o-> selectedTabId = this.idAsString }
   }
+}
 
-
+interface IIdentifiable {
+  val idAsString: String
 }
