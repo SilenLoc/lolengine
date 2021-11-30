@@ -3,6 +3,8 @@ package view.ui
 import javafx.application.Application
 import javafx.scene.Scene
 import javafx.stage.Stage
+import kotlinx.coroutines.coroutineScope
+import kotlinx.coroutines.runBlocking
 
 class LolApplication : Application() {
     override fun start(stage: Stage) {
@@ -14,10 +16,11 @@ class LolApplication : Application() {
         uiStartUp()
     }
 
-
 }
 
-fun main() {
+suspend fun main() = coroutineScope {
     startUp()
-    Application.launch(LolApplication::class.java)
-}
+        Application.launch(LolApplication::class.java)
+    }
+
+
