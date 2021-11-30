@@ -1,12 +1,8 @@
 package view.ui.menu
 
 import javafx.event.EventHandler
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.GlobalScope
-import kotlinx.coroutines.launch
-import view.ui.championsString
 import view.ui.newChampionRequest
-import view.ui.refreshMainTab
+
 
 
 object MenuButtons {
@@ -15,12 +11,10 @@ object MenuButtons {
 
 
   fun getButtons(): List<javafx.scene.control.Button> {
+
     requestNewModelBtn.onAction = EventHandler {
       println("requesting..")
-      GlobalScope.launch(Dispatchers.IO) {
-        championsString = newChampionRequest()
-      }
-      refreshMainTab()
+        val answer = newChampionRequest()
     }
 
     return listOf(requestNewModelBtn)

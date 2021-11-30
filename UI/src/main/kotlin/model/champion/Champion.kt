@@ -1,5 +1,6 @@
 package model.champion
 
+import model.json.SpecificChampionJson
 import model.service.ChampionService
 
 data class Champion(
@@ -7,8 +8,11 @@ data class Champion(
   val name: String = "",
   val blurb: String = "",
   val infos: List<Pair<String, Int>>,
-  val stats: List<Pair<String, Double>>
-)
+  val stats: List<Pair<String, Double>>,
+  val lore: String = ""
+){
+
+}
 
 
  object IndexedChampions{

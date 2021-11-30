@@ -16,7 +16,7 @@ class ChampionView(model: Champion) : BorderPane() {
 
 
   init {
-    loreTab.content = MainLoreView(model.blurb, "no full lore yet")
+    loreTab.content = MainLoreView(model.blurb, model.lore)
     infoTab.content = ChampionInfoView(model.infos)
     statsTab.content = ChampionStatsView(model.stats)
 

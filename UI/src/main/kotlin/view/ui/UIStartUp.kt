@@ -14,10 +14,10 @@ val mainTabPane = TabPane()
 
 fun uiStartUp(): BorderPane {
 
-
   mainPane.top = Menu(MenuButtons.getButtons())
-   mainPane.center = SearchView()
+  mainPane.center = SearchView()
   mainPane.bottom = mainTabPane
+
   ChampionService.champions.forEach { model ->
     mainTabPane.tabs.add(ChampionTab(model))
   }
@@ -27,7 +27,7 @@ fun uiStartUp(): BorderPane {
   return mainPane
 }
 
-fun refreshMainTab(){
+fun refreshMainTab() {
   mainTabPane.tabs.clear()
   ChampionService.champions.forEach { model ->
     mainTabPane.tabs.add(ChampionTab(model))
