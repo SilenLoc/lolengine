@@ -3,6 +3,7 @@ package model.service
 
 import model.api.getNewestInfo
 import model.champion.Champion
+import model.champion.ChampionSpell
 import model.json.ChampionJson
 import model.json.ChampionsJson
 import model.json.SpecificChampionJson
@@ -15,8 +16,8 @@ object ChampionService {
     get() = newestChampions.first
 
   private val specificChampions: Map<String, SpecificChampionJson.Champion>
-    get() = newestChampions.second.associate {
-      val champion = it.data.values.first()
+    get() = newestChampions.second.associate { championJson ->
+      val champion = championJson.data.values.first()
       champion.id to champion
     }
 
@@ -27,43 +28,42 @@ object ChampionService {
     get() = resolveChampionsFromJson()
 
 
-  private fun resolveChampionsFromJson() = championsJsonList.map {
-    println(specificChampions)
-    val specificChampion = specificChampions[it.id]
+  private fun resolveChampionsFromJson() = championsJsonList.map { jsonC ->
+    val specificChampion = specificChampions[jsonC.id]
 
     Champion(
-      it.id,
-      it.name,
-      it.blurb,
+      jsonC.id,
+      jsonC.name,
       listOf(
-        "Attack" to it.info.attack,
-        "Defense" to it.info.defense,
-        "Magic" to it.info.magic,
-        "Difficulty" to it.info.difficulty
+        "Attack" to jsonC.info.attack,
+        "Defense" to jsonC.info.defense,
+        "Magic" to jsonC.info.magic,
+        "Difficulty" to jsonC.info.difficulty
       ),
       listOf(
-        "hp" to it.stats.hp,
-        "hp per level" to it.stats.hpperlevel,
-        "mp" to it.stats.mp,
-        "mp per level" to it.stats.mpperlevel,
-        "move speed" to it.stats.movespeed,
-        "armor" to it.stats.armor,
-        "armor per level" to it.stats.armorperlevel,
-        "spell block" to it.stats.spellblock,
-        "spell block per level" to it.stats.spellblockperlevel,
-        "attack range" to it.stats.attackrange,
-        "hp regeneration" to it.stats.hpregen,
-        "hp regeneration per level" to it.stats.hpregenperlevel,
-        "mp regeneration" to it.stats.mpregen,
-        "mp regeneration per level" to it.stats.mpregenperlevel,
-        "critical chance" to it.stats.crit,
-        "critical chance per level" to it.stats.crit,
-        "attack damage" to it.stats.attackdamage,
-        "attack damage per level" to it.stats.attackdamageperlevel,
-        "attack speed" to it.stats.attackspeed,
-        "attack speed per level" to it.stats.attackspeedperlevel,
+        "hp" to jsonC.stats.hp,
+        "hp per level" to jsonC.stats.hpperlevel,
+        "mp" to jsonC.stats.mp,
+        "mp per level" to jsonC.stats.mpperlevel,
+        "move speed" to jsonC.stats.movespeed,
+        "armor" to jsonC.stats.armor,
+        "armor per level" to jsonC.stats.armorperlevel,
+        "spell block" to jsonC.stats.spellblock,
+        "spell block per level" to jsonC.stats.spellblockperlevel,
+        "attack range" to jsonC.stats.attackrange,
+        "hp regeneration" to jsonC.stats.hpregen,
+        "hp regeneration per level" to jsonC.stats.hpregenperlevel,
+        "mp regeneration" to jsonC.stats.mpregen,
+        "mp regeneration per level" to jsonC.stats.mpregenperlevel,
+        "critical chance" to jsonC.stats.crit,
+        "critical chance per level" to jsonC.stats.crit,
+        "attack damage" to jsonC.stats.attackdamage,
+        "attack damage per level" to jsonC.stats.attackdamageperlevel,
+        "attack speed" to jsonC.stats.attackspeed,
+        "attack speed per level" to jsonC.stats.attackspeedperlevel,
       ),
-      specificChampion?.lore ?: "no lore found"
+      specificChampion?.lore ?: "no lore found",
+      specificChampion?.spells?.map { ChampionSpell(it.name, it.description) } ?: emptyList()
     )
   }
 }

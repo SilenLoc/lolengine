@@ -6,13 +6,18 @@ import model.service.ChampionService
 data class Champion(
   val id: String = "",
   val name: String = "",
-  val blurb: String = "",
   val infos: List<Pair<String, Int>>,
   val stats: List<Pair<String, Double>>,
-  val lore: String = ""
+  val lore: String = "",
+  val spells: List<ChampionSpell>
 ){
 
 }
+
+data class ChampionSpell(
+  val name: String="",
+  val description: String=""
+)
 
 
  object IndexedChampions{
@@ -22,7 +27,6 @@ data class Champion(
 
    val championsById = champions.associateBy { it.id }
 
-   val championsByBlurb = champions.associateBy { it.blurb }
 
 }
 

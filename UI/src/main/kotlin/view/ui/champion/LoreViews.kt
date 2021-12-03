@@ -10,9 +10,6 @@ class FullLoreView(lore: String) : AbstractLoreView(lore, "Full Lore:"), IIdenti
 
 }
 
-class BlurbView(blurb: String) : AbstractLoreView(blurb, "Blurb:"), IIdentifiable {
-  override val idAsString: String = "blurb"
-}
 
 
 

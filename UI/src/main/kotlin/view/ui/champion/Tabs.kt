@@ -40,6 +40,26 @@ class StatsTab: Tab("Stats"), IIdentifiable {
   }
 }
 
+class SpellTab(private val name: String): Tab(name), IIdentifiable {
+  override val idAsString: String = "spelltab"
+  init {
+    this.isClosable = false
+    id = idAsString
+
+    this.selectedProperty().addListener { o-> selectedTabId = this.idAsString }
+  }
+}
+
+class SpellsTab: Tab("Spells"), IIdentifiable {
+  override val idAsString: String = "spellstab"
+  init {
+    this.isClosable = false
+    id = idAsString
+
+    this.selectedProperty().addListener { o-> selectedTabId = this.idAsString }
+  }
+}
+
 class LoreTab: Tab("Lore"), IIdentifiable {
   override val idAsString: String = "loreTab"
   init {

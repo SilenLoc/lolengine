@@ -147,7 +147,7 @@ data class SpecificChampionJson(
                 @SerialName("image")
                 val image: Image,
                 @SerialName("leveltip")
-                val leveltip: Leveltip,
+                val leveltip: Leveltip? = Leveltip(listOf("no effect"),listOf("no label") ),
                 @SerialName("maxammo")
                 val maxammo: String, // -1
                 @SerialName("maxrank")
@@ -159,7 +159,7 @@ data class SpecificChampionJson(
                 @SerialName("rangeBurn")
                 val rangeBurn: String, // 25000
                 @SerialName("resource")
-                val resource: String, // No Cost
+                val resource: String = "empty field", // No Cost
                 @SerialName("tooltip")
                 val tooltip: String, // Aatrox slams his greatsword, dealing <physicalDamage>{{ qdamage }} physical damage</physicalDamage>. If they are hit on the edge, they are briefly <status>Knocked Up</status> and they take <physicalDamage>{{ qedgedamage }}</physicalDamage> instead. This Ability can be <recast>Recast</recast> twice, each one changing shape and dealing 25% more damage than the previous one.
                 @SerialName("vars")

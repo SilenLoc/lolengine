@@ -10,19 +10,22 @@ import model.champion.Champion
 class ChampionView(model: Champion) : BorderPane() {
 
   private val championInnerTabPane = TabPane()
-  private val loreTab = InfoTab()
-  private val infoTab = LoreTab()
+  private val loreTab = LoreTab()
+  private val infoTab = InfoTab()
   private val statsTab = StatsTab()
+  private val spellsTab = SpellsTab()
 
 
   init {
-    loreTab.content = MainLoreView(model.blurb, model.lore)
+    loreTab.content = MainLoreView(model.lore)
     infoTab.content = ChampionInfoView(model.infos)
     statsTab.content = ChampionStatsView(model.stats)
+    spellsTab.content = ChampionSpellView(model.spells.map { it.name to it.description })
 
-    championInnerTabPane.tabs.addAll(loreTab, infoTab, statsTab)
 
-    this.bottom = championInnerTabPane
+    championInnerTabPane.tabs.addAll(loreTab, infoTab, statsTab, spellsTab)
+
+    this.top = championInnerTabPane
   }
 
   fun selectInnerTabWithId(id: String) {
@@ -31,7 +34,7 @@ class ChampionView(model: Champion) : BorderPane() {
 
 }
 
-class ChampionStatsView(stats: List<Pair<String, Double>>) : VBox(){
+class ChampionStatsView(stats: List<Pair<String, Double>>) : VBox() {
 
   init {
     val infoViews = stats.map { (title, double) ->
@@ -42,10 +45,9 @@ class ChampionStatsView(stats: List<Pair<String, Double>>) : VBox(){
   }
 }
 
-class MainLoreView(meta: String, fullLore: String) : BorderPane() {
+class MainLoreView(fullLore: String) : BorderPane() {
 
   init {
-    this.bottom = BlurbView(meta)
     this.center = FullLoreView(fullLore)
   }
 }
@@ -57,6 +59,26 @@ class ChampionInfoView(infos: List<Pair<String, Int>>) : VBox() {
       Label("$title: $int")
     }
     this.children.addAll(infoViews)
+  }
+}
+
+class ChampionSpellView(infos: List<Pair<String, String>>) : TabPane() {
+
+  init {
+    val infoViews = infos.map { (title, description ) ->
+      val tab =SpellTab("$title")
+      tab.content = SpellView(title, description)
+      tab
+    }
+    this.tabs.addAll(infoViews)
+  }
+}
+
+
+class SpellView(name: String, description: String) : VBox() {
+
+  init {
+    this.children.addAll(Label(name), Label(description))
   }
 }
 

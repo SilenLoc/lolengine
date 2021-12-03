@@ -17,7 +17,7 @@ object ChampionLoader {
 
   private fun decodeSpecChampion(string:String): SpecificChampionJson {
    return try {
-      val json = Json { ignoreUnknownKeys = true; allowStructuredMapKeys = true; coerceInputValues = true }
+      val json = Json { ignoreUnknownKeys = true; allowStructuredMapKeys = true; coerceInputValues = true; }
       return json.decodeFromString<SpecificChampionJson>(string)
     } catch (e: Exception) {
       println("decode failed with $string")

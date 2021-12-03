@@ -43,6 +43,7 @@ class SearchResultBox : ScrollPane(){
   init {
     this.content = container
     container.prefWrapLength = 1000.0
+    container.children.addAll(championLinkButtons)
   }
 
   fun refreshResults(results: Set<Champion> ){
