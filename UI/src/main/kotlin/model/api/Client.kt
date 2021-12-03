@@ -15,7 +15,7 @@ object Client {
 
   fun sendLolRequest(): Pair<ChampionsJson, List<SpecificChampionJson>> {
     val response = client.send(createLOLRequest(), HttpResponse.BodyHandlers.ofString())
-    println("trying to fetch common champion file")
+    println("trying to fetch champion file")
     val champions = ChampionLoader.loadChampions(response.body())
 
     val specificResponses = sendChampionsRequest(champions.data.values.map { it.id })
