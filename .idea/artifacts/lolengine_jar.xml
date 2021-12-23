@@ -1,0 +1,69 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="lolengine:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/lolengine_jar</output-path>
+    <root id="archive" name="lolengine.jar">
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/UI/src/main/kotlin/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="module-output" name="UI.main" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-jdk7/1.6.0/da6bdc87391322974a43ccc00a25536ae74dad51/kotlin-stdlib-jdk7-1.6.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.synedra/validatorfx/0.1.13/a17a7329e35778dac0392f9ada0b12bd4417a715/validatorfx-0.1.13.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.6.0/a40b8b22529b733892edf4b73468ce598bb17f04/kotlin-stdlib-1.6.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-jdk8/1.6.0/baf82c475e9372c25407f3d132439e4aa803b8b8/kotlin-stdlib-jdk8-1.6.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/eu.hansolo/tilesfx/11.48/b0bc6121588dc076252147ff82886073526b823c/tilesfx-11.48.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.openjfx/javafx-graphics/17/2c56d252b97eba8b42f049c6ce145172d744ce08/javafx-graphics-17-win.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.kordamp.ikonli/ikonli-core/12.2.0/a443a645cafd626918790946245b2ae95a4b386f/ikonli-core-12.2.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.openjfx/javafx-media/17/4d95015ecad2405a9b90482a201147b55a0165c6/javafx-media-17.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.kordamp.bootstrapfx/bootstrapfx-core/0.4.0/8d019b30266c00770cf29921d1008ad7feed0ed6/bootstrapfx-core-0.4.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.openjfx/javafx-media/17/6012cc30ced1539f167b64959cb9d6a4283f7aa7/javafx-media-17-win.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-coroutines-core-jvm/1.6.0-RC/d710eec1b0f630a99bbbf3932ab768576ecf7b2c/kotlinx-coroutines-core-jvm-1.6.0-RC.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.junit.platform/junit-platform-engine/1.7.1/d276a968c57f5d60a421dedd1f8b6ca2fae09e86/junit-platform-engine-1.7.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/13.0/919f0dfe192fb4e063e7dacadee7f8bb9a2672a9/annotations-13.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.junit.jupiter/junit-jupiter-api/5.7.1/a7261dff44e64aea7f621842eac5977fd6d2412d/junit-jupiter-api-5.7.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apiguardian/apiguardian-api/1.1.0/fc9dff4bb36d627bdc553de77e1f17efd790876c/apiguardian-api-1.1.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.openjfx/javafx-base/17/b63b9696f73009ca5002f49ec4db73576e2de168/javafx-base-17-win.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-coroutines-javafx/1.6.0-RC/f7b1adbf628beeb7aac7efb1614b3e90fa540c8f/kotlinx-coroutines-javafx-1.6.0-RC.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.openjfx/javafx-base/17/1e6732190939254735dc2a88eca88c5c7ccc719d/javafx-base-17.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-serialization-core-jvm/1.3.1/a108188c00995a2b0ce1dcb19bb5f2d7f7737017/kotlinx-serialization-core-jvm-1.3.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.opentest4j/opentest4j/1.2.0/28c11eb91f9b6d8e200631d46e20a7f407f2a046/opentest4j-1.2.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.junit.jupiter/junit-jupiter-engine/5.7.1/7fcfa59c5533abb41f86b1408960737eeaf1f49f/junit-jupiter-engine-5.7.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.openjfx/javafx-fxml/17/8d79ed85fa9dde644d4b37d93a02a2ef2818769/javafx-fxml-17-win.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-serialization-json-jvm/1.3.1/4e713ce651ad6411c8bfe9005a3ca5e69f0a8865/kotlinx-serialization-json-jvm-1.3.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.openjfx/javafx-web/17/be4a308dbcc947af2a9d9c42a72fd7f6d0ba77b9/javafx-web-17-win.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.kordamp.ikonli/ikonli-javafx/12.2.0/6ace0fd9f5d5d17b4316dfee560c8eb0bf69ab26/ikonli-javafx-12.2.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.openjfx/javafx-controls/17/7116001b777530c89e5c7381d39a2c9268f71e7e/javafx-controls-17.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.openjfx/javafx-graphics/17/616d987ba02a86196d7feca443677fff908d5737/javafx-graphics-17.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-common/1.6.0/7857e365f925cfa060f941c1357cda1f8790502c/kotlin-stdlib-common-1.6.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.dlsc.formsfx/formsfx-core/11.3.2/4dd940cfa93587bad3fee448d59f598eb734a081/formsfx-core-11.3.2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.junit.platform/junit-platform-commons/1.7.1/7c49f0074842d07f4335de2389d624a7437d1407/junit-platform-commons-1.7.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.controlsfx/controlsfx/11.1.0/4627258861ef68750b5fce11f8853d530cce6add/controlsfx-11.1.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.openjfx/javafx-controls/17/efc0f4edde079c22987064922530c67fa1350a9b/javafx-controls-17-win.jar" path-in-jar="/" />
+      <element id="library" level="project" name="Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-javafx:1.6.0-RC" />
+      <element id="library" level="project" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.6.0" />
+      <element id="library" level="project" name="Gradle: org.openjfx:javafx-fxml:win:17" />
+      <element id="library" level="project" name="Gradle: org.openjfx:javafx-web:win:17" />
+      <element id="library" level="project" name="Gradle: org.openjfx:javafx-controls:17" />
+      <element id="library" level="project" name="Gradle: org.openjfx:javafx-controls:win:17" />
+      <element id="library" level="project" name="Gradle: org.openjfx:javafx-media:17" />
+      <element id="library" level="project" name="Gradle: org.openjfx:javafx-media:win:17" />
+      <element id="library" level="project" name="Gradle: org.openjfx:javafx-graphics:17" />
+      <element id="library" level="project" name="Gradle: org.openjfx:javafx-graphics:win:17" />
+      <element id="library" level="project" name="Gradle: org.openjfx:javafx-base:17" />
+      <element id="library" level="project" name="Gradle: org.openjfx:javafx-base:win:17" />
+      <element id="library" level="project" name="Gradle: org.controlsfx:controlsfx:11.1.0" />
+      <element id="library" level="project" name="Gradle: com.dlsc.formsfx:formsfx-core:11.3.2" />
+      <element id="library" level="project" name="Gradle: net.synedra:validatorfx:0.1.13" />
+      <element id="library" level="project" name="Gradle: org.kordamp.ikonli:ikonli-javafx:12.2.0" />
+      <element id="library" level="project" name="Gradle: org.kordamp.bootstrapfx:bootstrapfx-core:0.4.0" />
+      <element id="library" level="project" name="Gradle: eu.hansolo:tilesfx:11.48" />
+      <element id="library" level="project" name="Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm:1.6.0-RC" />
+      <element id="library" level="project" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.6.0" />
+      <element id="library" level="project" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib:1.6.0" />
+      <element id="library" level="project" name="Gradle: org.kordamp.ikonli:ikonli-core:12.2.0" />
+      <element id="library" level="project" name="Gradle: org.jetbrains.kotlinx:kotlinx-serialization-json-jvm:1.3.1" />
+      <element id="library" level="project" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-common:1.6.0" />
+      <element id="library" level="project" name="Gradle: org.jetbrains:annotations:13.0" />
+      <element id="library" level="project" name="Gradle: org.jetbrains.kotlinx:kotlinx-serialization-core-jvm:1.3.1" />
+    </root>
+  </artifact>
+</component>

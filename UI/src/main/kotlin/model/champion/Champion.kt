@@ -10,9 +10,7 @@ data class Champion(
   val stats: List<Pair<String, Double>>,
   val lore: String = "",
   val spells: List<ChampionSpell>
-){
-
-}
+)
 
 data class ChampionSpell(
   val name: String="",

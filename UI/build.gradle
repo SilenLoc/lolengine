@@ -16,9 +16,12 @@ repositories {
 ext {
     junitVersion = '5.7.1'
 }
+java{
+    toolchain {
+        languageVersion.set(JavaLanguageVersion.of(11))
+    }
+}
 
-sourceCompatibility = '16'
-targetCompatibility = '16'
 
 tasks.withType(JavaCompile) {
     options.encoding = 'UTF-8'
@@ -26,7 +29,7 @@ tasks.withType(JavaCompile) {
 
 application {
     mainModule = 'view.ui'
-    mainClass = 'view.ui.LolApplication'
+    mainClass = 'LolApplication'
 }
 
 [compileKotlin, compileTestKotlin].forEach {
@@ -36,7 +39,7 @@ application {
 }
 
 javafx {
-    version = '16'
+    version = '17'
     modules = ['javafx.controls', 'javafx.fxml', 'javafx.web']
 }
 
@@ -59,10 +62,22 @@ dependencies {
     implementation ("org.jetbrains.kotlinx:kotlinx-coroutines-javafx:1.6.0-RC")
 
 
+
+
     testImplementation("org.junit.jupiter:junit-jupiter-api:${junitVersion}")
     testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:${junitVersion}")
 }
 
 test {
     useJUnitPlatform()
+}
+
+
+jar {
+    manifest {
+        attributes 'Main-Class': 'LolApplication'
+    }
+
+    from { configurations.runtimeClasspath.collect { it.isDirectory() ? it : zipTree(it) } }
+    duplicatesStrategy = 'include'
 }
