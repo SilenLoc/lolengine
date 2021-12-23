@@ -4,6 +4,7 @@ plugins {
     id 'org.jetbrains.kotlin.jvm' version '1.5.10'
     id 'org.openjfx.javafxplugin' version '0.0.10'
     id 'org.jetbrains.kotlin.plugin.serialization' version '1.5.31'
+    id 'edu.sc.seis.launch4j' version '2.5.1'
 }
 
 group 'view'
@@ -80,4 +81,11 @@ jar {
 
     from { configurations.runtimeClasspath.collect { it.isDirectory() ? it : zipTree(it) } }
     duplicatesStrategy = 'include'
+}
+
+launch4j {
+    headerType="gui"
+    mainClassName = 'LolApplicationKt'
+    outfile = "Lol.exe"
+    jar = 'C:\\lol\\UI\\build\\libs\\UI-1.0-SNAPSHOT.jar'
 }

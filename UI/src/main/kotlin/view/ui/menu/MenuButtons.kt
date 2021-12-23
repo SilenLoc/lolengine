@@ -1,7 +1,6 @@
 package view.ui.menu
 
 import javafx.event.EventHandler
-import javafx.stage.FileChooser
 import model.service.ChampionService
 import model.service.championexport.ChampionExportService
 import view.ui.FileChooserWindow

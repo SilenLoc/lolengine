@@ -1,10 +1,7 @@
 import javafx.application.Application
 import javafx.scene.Scene
 import javafx.stage.Stage
-import kotlinx.coroutines.async
-import kotlinx.coroutines.coroutineScope
-import kotlinx.coroutines.job
-import kotlinx.coroutines.runBlocking
+
 import view.ui.uiStartUp
 
 class LolApplication : Application() {
