@@ -63,7 +63,15 @@ object ChampionService {
         "attack speed per level" to jsonC.stats.attackspeedperlevel,
       ),
       specificChampion?.lore ?: "no lore found",
-      specificChampion?.spells?.map { ChampionSpell(it.name, it.description) } ?: emptyList()
+      specificChampion?.spells?.map {
+        ChampionSpell(
+          it.name,
+          it.description,
+          it.cooldown.joinToString(","),
+          it.cooldownBurn,
+          it.cost.joinToString(","),
+          it.costType
+        ) } ?: emptyList()
     )
   }
 }

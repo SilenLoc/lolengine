@@ -14,7 +14,11 @@ data class Champion(
 
 data class ChampionSpell(
   val name: String="",
-  val description: String=""
+  val description: String="",
+  val cooldown: String ="x",
+  val cooldownBurn: String = "",
+  val cost: String = "",
+  val costType: String  = ""
 )
 
 
